@@ -20,7 +20,7 @@
 
     "autoload": {
         "psr-4": {
-            "allowing\\yiijsblock\\": "src/allowing-yiijsblock"
+            "allowing\\yiijsblock\\": "src"
         }
     }
 }
