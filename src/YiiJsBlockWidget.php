@@ -16,6 +16,8 @@ class YiiJsBlockWidget extends Widget
         if ($this->position === null) {
             $this->position = View::POS_END;
         }
+
+        ob_start();
     }
 
     public function run()
@@ -23,7 +25,7 @@ class YiiJsBlockWidget extends Widget
         $content = ob_get_clean();
 
         // <script></script>
-        preg_match('/<script.*?>(.*?)<script>/is', $content, $match);
+        preg_match('|<script.*?>(.*?)</script>|is', $content, $match);
 
         $js = isset($match[1]) ? $match[1] : '';
 
