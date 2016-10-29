@@ -5,7 +5,7 @@ namespace allowing\yiijsblock;
 use yii\base\Widget;
 use yii\web\View;
 
-class YiiJsBlock extends Widget
+class YiiJsBlockWidget extends Widget
 {
     public $position;
 
