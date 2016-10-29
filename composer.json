@@ -1,0 +1,26 @@
+{
+    "name": "allowing/allowing-yiijsblock",
+
+    "type": "yii2-extension",
+
+    "description": "yii2 的一个 js block 插件包。因为在视图写的 js 无法插入到 body 的底部，这个包可以解决",
+    "keywords": ["yii2", "js block", "helper"],
+    "license": "BSD-3-Clause",
+
+    "authors": [
+        {
+            "name": "allowing",
+            "email": "ljjgit@qq.com"
+        }
+    ],
+
+    "require": {
+        "yiisoft/yii2": "^2.0"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "allowing\\yiijsblock\\": "src/allowing-yiijsblock"
+        }
+    }
+}
